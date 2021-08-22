@@ -15,20 +15,6 @@
                     <view key="view" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Trh-Af-5Db">
-                                <rect key="frame" x="121" y="675" width="172" height="66"/>
-                                <color key="backgroundColor" systemColor="linkColor"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="172" id="2n0-FK-uyc"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" type="system" pointSize="45"/>
-                                <state key="normal" title="Button">
-                                    <color key="titleColor" systemColor="systemGroupedBackgroundColor"/>
-                                </state>
-                                <connections>
-                                    <action selector="buttonChangeColor" destination="BYZ-38-t0r" eventType="touchUpInside" id="ZEG-4X-iBe"/>
-                                </connections>
-                            </button>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="35" translatesAutoresizingMaskIntoConstraints="NO" id="084-2t-L5M">
                                 <rect key="frame" x="152" y="120" width="110" height="400"/>
                                 <subviews>
@@ -50,6 +36,20 @@
                                     <constraint firstAttribute="width" constant="110" id="zZd-Dv-64H"/>
                                 </constraints>
                             </stackView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Trh-Af-5Db">
+                                <rect key="frame" x="121" y="751" width="172" height="66"/>
+                                <color key="backgroundColor" systemColor="linkColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="172" id="2n0-FK-uyc"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="45"/>
+                                <state key="normal" title="Button">
+                                    <color key="titleColor" systemColor="systemGroupedBackgroundColor"/>
+                                </state>
+                                <connections>
+                                    <action selector="buttonChangeColor" destination="BYZ-38-t0r" eventType="touchUpInside" id="ZEG-4X-iBe"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -57,7 +57,7 @@
                             <constraint firstItem="Trh-Af-5Db" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="YtN-s9-XH6"/>
                             <constraint firstItem="084-2t-L5M" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="aFM-SY-zFH"/>
                             <constraint firstItem="084-2t-L5M" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="76" id="cba-yd-vob"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="Trh-Af-5Db" secondAttribute="bottom" constant="121" id="jbW-a4-w6q"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="Trh-Af-5Db" secondAttribute="bottom" constant="45" id="xl9-Qf-RlO"/>
                         </constraints>
                     </view>
                     <connections>

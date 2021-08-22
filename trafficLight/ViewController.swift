@@ -12,16 +12,24 @@ class ViewController: UIViewController {
     @IBOutlet var redSignal: UIView!
     @IBOutlet var orangeSignal: UIView!
     @IBOutlet var greenSignal: UIView!
+    @IBOutlet var startButton: UIButton!
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        startButton.layer.cornerRadius = 10
+        
         redSignal.alpha = 0.3
         orangeSignal.alpha = 0.3
         greenSignal.alpha = 0.3
         
+    }
+    
+    override func viewWillLayoutSubviews() {
+        
         redSignal.layer.cornerRadius = redSignal.frame.width / 2
         orangeSignal.layer.cornerRadius = orangeSignal.frame.width / 2
         greenSignal.layer.cornerRadius = greenSignal.frame.width / 2
+        
     }
 
     @IBAction func buttonChangeColor() {
